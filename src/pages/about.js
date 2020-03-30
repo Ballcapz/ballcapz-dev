@@ -20,19 +20,18 @@ const About = ({ data }) => {
         <HeadingXL>About</HeadingXL>
         <Image fluid={data.RandomPhoto.childImageSharp.fluid} />
         <TextBody>
-          Building mr concerns servants in he outlived am breeding. He so lain
-          good miss when sell some at if. Told hand so an rich gave next. How
-          doubt yet again see son smart. While mirth large of on front. Ye he
-          greater related adapted proceed entered an. Through it examine express
-          promise no. Past add size game cold girl off how old.
+            Hi! I'm Zach and I am a Software Engineer. I have been working
+            as a Software Engineering Consultant for about a year, and have 
+            been on a few projects, everything including large-scale C#/.NET enterprise
+            apps, down to a Vue.js Reporting SPA with a few pages. Recently I've
+            been passionate about learing Elixir, Erlang/OTP, and Elm, and fascinated by
+            all of the principles that come with learning those languages and ecosystems.
           <br />
           <br />
-          Bringing so sociable felicity supplied mr. September suspicion far him
-          two acuteness perfectly. Covered as an examine so regular of. Ye
-          astonished friendship remarkably no. Window admire matter praise you
-          bed whence. Delivered ye sportsmen zealously arranging frankness
-          estimable as. Nay any article enabled musical shyness yet sixteen yet
-          blushes. Entire its the did figure wonder off.
+            In my time off from programming, I enjoy drinking, making, and roasting coffee;
+            and spending time outdoors doing whatever happens to catch my eye
+            for the day. I also enjoy growing my own sustainable vegetables and herbs
+            for cooking!
         </TextBody>
         <Button href="mailto:your&#64;email.com">Get in touch</Button>
       </Layout>
