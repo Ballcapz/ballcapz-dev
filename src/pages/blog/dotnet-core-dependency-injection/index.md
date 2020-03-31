@@ -42,7 +42,6 @@ static void Main(string[] args)
     // calls the Run method in App, which is replacing Main
     serviceProvider.GetService<App>().Run();
 }
-
 private static IServiceCollection ConfigureServices()
 {
     IServiceCollection services = new ServiceCollection();
@@ -55,7 +54,6 @@ private static IServiceCollection ConfigureServices()
 
     return services;
 }
-
 public static IConfiguration LoadConfiguration()
 {
     var builder = new ConfigurationBuilder()
@@ -73,7 +71,8 @@ This registers the `appsettings.json` with the .net core Dependency Injection co
 ```cs
 // in App.cs
 private readonly IConfiguration _config;
-
+```
+```cs
 public App(IConfiguration config)
 {
     _config = config;
@@ -83,8 +82,8 @@ public App(IConfiguration config)
 ```json
 {
     "Runtime": {
-    "LogOutputDirectory": "C:\\temp\\programLog.txt"
-   }
+        "LogOutputDirectory": "C:\\temp\\programLog.txt"
+    }
 }
 ```
 * Use this configuration in `App.cs`

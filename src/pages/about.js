@@ -33,7 +33,7 @@ const About = ({ data }) => {
             for the day. I also enjoy growing my own sustainable vegetables and herbs
             for cooking!
         </TextBody>
-        <Button href="mailto:your&#64;email.com">Get in touch</Button>
+        <Button href="mailto:zachary.a.johnson.10&#64;gmail.com">Get in touch</Button>
       </Layout>
     </>
   );

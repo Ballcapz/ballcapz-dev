@@ -12,16 +12,6 @@ import {
 
 const BlogPost = ({ data }) => {
 
-/*  useEffect(() => {
-      try {
-          const ddGoHighlight = require('@deckdeckgo/highlight-code');
-
-          ddGoHighlight.defineCustomElements(window);
-      } catch (err) {
-          console.error(err);
-      }
-  }, []);
-  */
   const post = data.markdownRemark;
 
   return (
