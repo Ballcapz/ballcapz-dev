@@ -1,4 +1,4 @@
 import ArrowBack from './ArrowBack.svg';
-import GatsbyIcon from './GatsbyIcon.png';
+import ZachLogo from './zach-logo.png';
 
-export { ArrowBack, GatsbyIcon };
+export { ArrowBack, ZachLogo };
