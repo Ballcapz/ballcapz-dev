@@ -6,5 +6,5 @@
 <br>
 
 <h2 align="center">
-  Build with Gatsby
+  Built with Gatsby
 </h2>
