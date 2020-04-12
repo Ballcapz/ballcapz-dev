@@ -7,6 +7,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Ballcapz.dev`,
+        short_name: `Ballcapz`,
+        start_url: `/`,
+        background_color: `#FFF`,
+        theme_color: `#42fafa`,
+        display: `standalone`,
+        icon: `src/assets/icons/zach-logo.png`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
