@@ -15,7 +15,7 @@ module.exports = {
         background_color: `#FFF`,
         theme_color: `#42fafa`,
         display: `standalone`,
-        icon: `src/assets/icons/zach-logo.png`
+        icon: `src/assets/icons/zach-logo.svg`
       }
     },
     {
@@ -43,10 +43,10 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-source-dev`,
-        options: {
-            username: `ballcapz`
-        }
+      resolve: `gatsby-source-dev`,
+      options: {
+        username: `ballcapz`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
