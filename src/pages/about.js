@@ -20,16 +20,16 @@ const About = ({ data }) => {
         <HeadingXL>About</HeadingXL>
         <Image fluid={data.RandomPhoto.childImageSharp.fluid} />
         <TextBody>
-            Hi! I'm Zach and I am a Software Engineer. I have been working
-            as a Software Engineering Consultant for about a year, and have 
-            been on a few projects, everything including large-scale C#/.NET enterprise
-            apps, down to a Vue.js Reporting SPA with a few pages. Recently I've
-            been passionate about learing Elixir, Erlang/OTP, and Elm, and fascinated by
-            all of the principles that come with learning those languages and ecosystems.
+          Hi! I'm Zach and I am a Software Engineer. I have been working
+          as a Software Engineering Consultant for about a year, and have
+          been on a few projects, everything including large-scale C#/.NET enterprise
+          apps, down to a Vue.js Reporting SPA with a few pages. Recently I've
+          been passionate about learing Elixir, Erlang/OTP, and Elm, and fascinated by
+          all of the principles that come with learning those languages and ecosystems.
           <br />
           <br />
-            In my time off from programming, I enjoy drinking, making, and roasting coffee;
-            and spending time outdoors doing whatever happens to catch my eye
+            In my time off from programming, I enjoy making, roasting, and drinking coffee;
+            as well as spending time outdoors doing whatever happens to catch my eye
             for the day. I also enjoy growing my own sustainable vegetables and herbs
             for cooking!
         </TextBody>

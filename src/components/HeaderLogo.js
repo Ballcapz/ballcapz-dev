@@ -18,13 +18,29 @@ const Logo = styled.p`
   }
 `;
 
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const LinkWrapper = styled(Link)`
+  margin-right: 1rem;
+`;
+
 export const HeaderLogo = () => {
   return (
     <HeaderWrapper>
       <Logo>Ballcapz</Logo>
-      <Link to="/about">
-        <p>About</p>
-      </Link>
+      <LinksContainer>
+        <LinkWrapper to="/about">
+          <p>About</p>
+        </LinkWrapper>
+        <LinkWrapper to="/projects">
+          <p>Projects</p>
+        </LinkWrapper>
+      </LinksContainer>
+
     </HeaderWrapper>
   );
 };

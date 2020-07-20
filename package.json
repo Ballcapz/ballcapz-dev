@@ -1,12 +1,12 @@
 {
-  "name": "lewis-gatsby-starter-blog",
-  "description": "A custom Gatsby starter template to start a blog or personal website.",
-  "author": "@lewislbr",
+  "name": "zach-johnson-blog",
+  "description": "My personal blog.",
+  "author": "Zach Johnson",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog"
+    "url": "https://github.com/Ballcapz/ballcapz-dev"
   },
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
