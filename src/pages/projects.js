@@ -10,6 +10,7 @@ import {
     TextBody
 } from '../components'
 import styled from 'styled-components'
+import { BREAKPOINT } from '../utils/constants'
 
 const remy = px => `${px / 16}rem`
 const getFlex = (value) => {
@@ -45,7 +46,7 @@ const ProjectContainer = styled.div`
     }
     
     @media (min-width: 1200px) {
-        max-width: ${remy(1140)};
+        max-width: ${remy(1640)};
     }
 `;
 
@@ -59,6 +60,8 @@ const ProjectRow = styled.div`
 const ProjectColumn = styled.div`
     padding-right: ${remy(15)};
     padding-left: ${remy(15)};
+
+    margin: 1rem auto;
 
     ${({ xs }) => (xs ? getFlex(xs) : 'flex: 0 0 100%')};
     ${({ xs }) => (xs ? getWidth(xs) : 'width: 100%')};
@@ -81,6 +84,7 @@ const ProjectColumn = styled.div`
     @media (min-width: 1200px) {
         ${({ xl }) => xl && getFlex(xl)};
         ${({ xl }) => xl && getWidth(xl)};
+
     }
 `;
 
@@ -88,17 +92,36 @@ const ProjectCard = styled.article`
     padding: ${remy(24)};
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: ${remy(300)};
     height: ${remy(400)};
     border: 1px solid var(--accent-color);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 992px) {
+        border: none;
+    }
 `;
 
 const ProjectLink = styled.a`
     margin-bottom: ${remy(15)};
+    text-decoration: underline;
+
     :hover {
         box-shadow: 0px 9px 0 0 var(--accent-color);
+        text-decoration: none;
+    }
+`;
+
+const ProjectHeader = styled.h2`
+    font-size: ${remy(24)};
+    line-height: 1.2;
+    text-align: center;
+
+    @media (max-width: ${BREAKPOINT}px) {
+        font-size: ${remy(18)};
     }
 `;
 
@@ -112,9 +135,9 @@ const Projects = ({ data }) => {
 
                 <ProjectContainer>
                     <ProjectRow>
-                        <ProjectColumn sm='8' lg='6'>
+                        <ProjectColumn sm='8' lg='4'>
                             <ProjectCard>
-                                <HeadingL>Dotnet Core Console App Dependency Injection</HeadingL>
+                                <ProjectHeader>Dotnet Core Console App Dependency Injection</ProjectHeader>
                                 <ProjectLink
                                     href="https://github.com/Ballcapz/Console-Application-Dependency-Injection"
                                     target="_blank"
@@ -128,6 +151,37 @@ const Projects = ({ data }) => {
                             </ProjectCard>
                         </ProjectColumn>
 
+                        <ProjectColumn sm='8' lg='4'>
+                            <ProjectCard>
+                                <ProjectHeader>React Portfolio</ProjectHeader>
+                                <ProjectLink
+                                    href="https://github.com/Ballcapz/react-portfolio"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Github Link
+                                </ProjectLink>
+                                <TextBody>
+                                    Simple Portfolio site using functional React and Hooks
+                                </TextBody>
+                            </ProjectCard>
+                        </ProjectColumn>
+
+                        <ProjectColumn sm='8' lg='4'>
+                            <ProjectCard>
+                                <ProjectHeader>React Calendar</ProjectHeader>
+                                <ProjectLink
+                                    href="https://github.com/Ballcapz/TCal-React"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Github Link
+                                </ProjectLink>
+                                <TextBody>
+                                    Calendar app using functional React and Hooks
+                                </TextBody>
+                            </ProjectCard>
+                        </ProjectColumn>
 
                     </ProjectRow>
                 </ProjectContainer>
