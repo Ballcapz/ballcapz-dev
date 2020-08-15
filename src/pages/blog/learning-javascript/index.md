@@ -55,3 +55,84 @@ General learning and knowledge about javascript
   ); // setting total to start at 0
   // Produces: 6
   ```
+
+# React
+
+## Hooks
+
+### useState
+
+EX:
+
+```js
+function App() {
+  const [value, setValue] = useState(10);
+}
+```
+
+- Can only be used in functional components
+- `value` is the value of the state
+- `setValue` is a function that allows us to modify the state
+- `10` (or whatever object, string, etc...) is the initial value of the state
+
+EX 2:
+
+```js
+function veryTimeConsuming() {
+    ...
+    ...
+    return { /* COMPLICATED STATE */ };
+}
+
+function App() {
+    const [value, setValue] = useState(() => veryTimeConsuming());
+}
+```
+
+- In this case, we may want to call use state with an initial value as a function, because if our initial state is expensive or timeconsuming, this will only get ran 1 time, wheras if we just call `veryTimeConsuming()` without it being part of a function call, it will get re-called every render of the `App()`
+
+Ex 3, the set function:
+
+```js
+function App() {
+  const [count, setCount] = useState(10);
+
+  return (
+    <div>
+      <button onClick={() => setCount((currentCount) => currentCount + 1)}>
+        +
+      </button>
+      <div>{count}</div>
+    </div>
+  );
+}
+```
+
+- The reason for the function in the `onClick` event handler is so we can prevent things like race conditions, as well as being more explicit about what is going on.
+- There may also be some cases where it can help prevent extra re-renders
+
+EX 4, set function with multiple values in the state:
+
+```js
+const [{ count, count2 }, setCount] = useState({ count: 10, count2: 20 });
+
+return (
+  <div>
+    <button
+      onClick={() =>
+        setCount((currentState) => ({
+          ...currentState,
+          count: currentState.count + 1,
+        }))
+      }
+    >
+      +
+    </button>
+    <div>count 1: {count}</div>
+    <div>count 2: {count2}</div>
+  </div>
+);
+```
+
+- with hooks react does not automatically merge, so if we do not spread the current state `...currentState`, the count2 value will just become empty when the update is made to `currentState.count`
+- using it this way, we keep the `count2` reference and it continues to work when `count` is updated
