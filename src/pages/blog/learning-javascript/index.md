@@ -3,6 +3,11 @@ title: 'On my learnings of JavaScript'
 date: '2020-08-10'
 ---
 
+# This is WIP
+
+This is a Work in progress post that I am continually updating as I continue to deepen my knowledge of JavaScript.
+Most everything here are just for coming back to review, but sometimes I'll note down something new I learn here too.
+
 # Learning more about Vue
 
 A year ago I would have said I was pretty good using Vue, now I know how much I don't really know.
