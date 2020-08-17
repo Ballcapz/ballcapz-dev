@@ -141,3 +141,32 @@ return (
 
 - with hooks react does not automatically merge, so if we do not spread the current state `...currentState`, the count2 value will just become empty when the update is made to `currentState.count`
 - using it this way, we keep the `count2` reference and it continues to work when `count` is updated
+
+### useEffect
+
+Whatever happens inside of this function gets called on every re-render of the component.
+
+EX:
+
+```js
+useEffect(() => {
+  console.log('mounted');
+}, []);
+```
+
+- here we see we are passing an Empty dependency array as the second argument to `useEffect`, in which case the work inside of it happens once, on mount of the component.
+
+EX 2, Cleanup:
+
+```js
+useEffect(() => {
+  console.log('mounted');
+
+  // The useEffect returns this as a clean up function
+  return () => {
+    console.log('unmount');
+  };
+}, []);
+```
+
+- in this case it gets called when the component is unmounting
