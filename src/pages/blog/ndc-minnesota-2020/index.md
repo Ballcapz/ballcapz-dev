@@ -63,8 +63,21 @@ There should only be a single mock per test since we only want to assert once, a
 Anything that is a Public function, which in JavaScript includes callbacks. Therefore, you should make callbacks public functions.
 
 
+## How to practice Unit Testing
+
+Step one here is to do it a lot. Daily practice is recommended to improve your unit testing skills until it just becomes the way that you write code.
+
+One of the best tools for this is unit testing Katas. Exercises to practice over and over, from scratch.
+
+Here are some good examples of Katas that I now try to keep up practicing:
+
+[TDD Katas Github](https://github.com/wix/tdd-katas) The one that I mainly practice is the String Calculator
+
+There are also numerous other resources online to discover different TDD Katas you can do daily to improve your unit testing and TDD skills.
+
 ## Book Recommendations
 
 - Test Driven Development: By Example - *Kent Beck*
 - Extreme Programming Explained - *Kent Beck*
+- The Art Of Unit Testing - *Roy Osherove*
 
