@@ -4,7 +4,11 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 .vscode
+=======
+/.vscode/
+>>>>>>> d52cb490f188bc6e62a1174d63efab769f4ffb11
 # Runtime data
 pids
 *.pid
