@@ -40,7 +40,6 @@ export const HeaderLogo = () => {
           <p>Projects</p>
         </LinkWrapper>
       </LinksContainer>
-
     </HeaderWrapper>
   );
 };

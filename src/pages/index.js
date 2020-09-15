@@ -57,9 +57,8 @@ const Home = ({ data }) => {
         <Hero>
           <HeadingXL>Zach Johnson</HeadingXL>
           <TextHome>
-            Welcome! I am a Software Engineer currently working as
-            a consultant. I have a passion for software, coffee, and
-            growing sustainable food!
+            Welcome! I am a Software Engineer currently working as a consultant.
+            I have a passion for software, coffee, and the outdoors!
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -97,9 +96,3 @@ export const query = graphql`
     }
   }
 `;
-
-
-
-
-
-

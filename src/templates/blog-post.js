@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 
 import {
@@ -11,7 +11,6 @@ import {
 } from '../components';
 
 const BlogPost = ({ data }) => {
-
   const post = data.markdownRemark;
 
   return (

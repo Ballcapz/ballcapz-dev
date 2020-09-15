@@ -12,4 +12,8 @@ export const TextBody = styled.p`
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 0 5vh 0;
   }
+
+  a {
+    text-decoration: underline;
+  }
 `;

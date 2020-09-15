@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import { HeaderBack, HeadingXL, SEO, Layout, TextBody } from '../components';
 import styled from 'styled-components';
 import { BREAKPOINT } from '../utils/constants';
@@ -112,7 +111,7 @@ const ProjectHeader = styled.h2`
   }
 `;
 
-const Projects = ({ data }) => {
+const Projects = () => {
   return (
     <>
       <SEO title="Projects" />
