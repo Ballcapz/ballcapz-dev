@@ -3,13 +3,12 @@ title: 'NDC Minnesota 2020 Day 1'
 date: '2020-09-15'
 ---
 
-# NDC Minnesota 2020 Day 1
+# Tuesday  - Test Driven Development in Modern JavaScript
+**With Roy Osherove**
 
-This year NDC Minnesota was online, and it was a week full of excellent workshops.
+This year NDC Minnesota was online, and it was a week full of excellent workshops. It kicked off on Tuesday September 8th with a day long workshop on TDD in modern JavaScript with *Art of Unit Testing* author Roy Osherove.
 
 
-# Tuesday - Test Driven Development in Modern JavaScript
-With Roy Osherove
 
 ## An overview of the day
 
