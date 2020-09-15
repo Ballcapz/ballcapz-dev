@@ -130,14 +130,3 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 `;
-
-
-
-
-
-
-
-
-
-
-

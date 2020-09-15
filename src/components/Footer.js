@@ -40,7 +40,6 @@ export const Footer = () => {
       >
         Dev.to
       </ButtonLink>
-
     </Container>
   );
 };

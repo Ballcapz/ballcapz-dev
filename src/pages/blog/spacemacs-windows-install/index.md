@@ -15,8 +15,8 @@ date: '2020-04-12'
 
 5. For easier access to open emacs, navigate back to the bin folder and find the `runemacs.exe` file; right click on it and select send to > desktop(create shortcut) and create a shortcut on your desktop to start emacs easily.
 
-
 #### Congratulations Emacs is installed (and possibly ready to use?)
+
 I'm am going to go a bit further and install spacemacs as the config because it gives a nice base to work off, provides easy extension points, and I personally prefer vim style navigation and editing as it is what I started on (as well as being easier on the wrist most of the time)
 
 # Install And Configure Spacemacs
@@ -30,13 +30,14 @@ I'm am going to go a bit further and install spacemacs as the config because it 
 ```
 git clone https://github.com/syl20bnr/spacemacs C:\%USERPROFILE%\appdata\roaming\.emacs.d
 ```
+
 This will put the spacemacs config in the .emacs.d folder.
 
 4. Finally, open up emacs and run through configuration to get your preferences set up and installed.
 
 5. From here, the [Spacemacs docs](https://www.spacemacs.org/doc/DOCUMENTATION.html) give lots of ideas on how to customize and extend your editor and capabilities within emacs.
 
-
 ### Useful links
-* [Spacemacs](https://www.spacemacs.org/#)
-* [Gnu Emacs](https://www.gnu.org/software/emacs)
+
+- [Spacemacs](https://www.spacemacs.org/#)
+- [Gnu Emacs](https://www.gnu.org/software/emacs)
