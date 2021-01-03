@@ -16,19 +16,6 @@
     "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
     "serve": "gatsby serve"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn lint"
-    ],
-    "*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}": [
-      "yarn format"
-    ]
-  },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^1.0.1",
     "babel-plugin-styled-components": "^1.10.7",
