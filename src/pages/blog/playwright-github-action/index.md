@@ -14,7 +14,11 @@ To deploy, we use a Github action that checks-out, builds, tests, and deploys ou
 - The Chrome sandbox not allowing tests to run - The fix:
 
   ```js
-  browser = await chromium.launch({ headless: IS_HEADLESS, chromiumSandbox: false, args: ['--no-sandbox', '--disable-setuid-sandbox']
+  browser = await chromium.launch({
+    headless: IS_HEADLESS,
+    chromiumSandbox: false,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  });
   ```
 
   So, this is kind of breaking some security practices, but since we are running the tests in an isolated, secure sandbox, this was a tradeoff we were willing to make. We also aren't exposing any sensitive data or anything, so thats another reason why we found no problem running the chromium instance without sandboxing.
@@ -47,5 +51,3 @@ Which waits for the div with text content of `example.txt` to be hidden from the
 <br />
 
 These were the main sticking points I had getting [Playwright](https://playwright.dev) to work in production.
-
-#testing #playwright #test #help #ui #e2e #githubaction #playwrightgithub #code #dev
